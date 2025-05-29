@@ -1,17 +1,12 @@
 import type { FastifyReply, FastifyRequest } from "fastify";
-import { z } from "zod";
-import { db, dbConfig } from "../../database/database";
-
-const createUserBodySchema = z.object({
-  name: z.string(),
-  description: z.string(),
-});
+import { db } from "../../database/database";
+import { validationMealsSchema } from "../validations-schema";
 
 export const createMealController = async (
   request: FastifyRequest,
   reply: FastifyReply
 ) => {
-  const result = createUserBodySchema.parse(request.body);
+  const result = validationMealsSchema.parse(request.body);
   const { name, description } = result;
   const { userId } = request.cookies;
 

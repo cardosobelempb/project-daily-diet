@@ -95,17 +95,17 @@ npm run knex migrate:rollback
 
 [X] Indicação se está ou não dentro da dieta
 [X] As refeições devem estar associadas a um usuário.
-[] Editar qualquer informação de uma refeição.
-[] Apagar uma refeição.
+[X] Editar qualquer informação de uma refeição.
+[X] Apagar uma refeição.
 [X] Listar todas as refeições de um usuário.
 [X] Visualizar os detalhes de uma única refeição.
 
 ## 📊 Métricas
 - Recuperar métricas de um usuário:
-[] Quantidade total de refeições registradas.
-[] Quantidade total de refeições dentro da dieta.
-[] Quantidade total de refeições fora da dieta.
-[]  Melhor sequência de refeições dentro da dieta (em dias consecutivos ou outra regra definida).
+[X] Quantidade total de refeições registradas.
+[X] Quantidade total de refeições dentro da dieta.
+[X] Quantidade total de refeições fora da dieta.
+[X] Melhor sequência de refeições dentro da dieta (em dias consecutivos ou outra regra definida).
 
 ## 📁 Estrutura Sugerida de Pastas
 
